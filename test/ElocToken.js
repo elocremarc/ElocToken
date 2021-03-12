@@ -37,7 +37,6 @@ contract("ElocToken", (accounts) => {
   });
 
   it(`Double Claim rejection test`, async () => {
-    // FAILURE: cannot mint same color twice
     await token.claim().should.be.rejected;
   });
 });
